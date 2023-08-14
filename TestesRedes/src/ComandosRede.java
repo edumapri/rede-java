@@ -1,11 +1,10 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 
 
-public class Main {
+public class ComandosRede {
 
     // method for finding the ping statics of website
     static void commands(ArrayList<String> commandList)
@@ -56,7 +55,20 @@ public class Main {
         // can be replaced by IP
         commandList.add(endereco);
 
-        Main PingWebsite = null;
+        ComandosRede PingWebsite = null;
         PingWebsite.commands(commandList);
+
+        System.out.println("Pressione Enter para sair.");
+
+        entradaUsuario.nextLine();
+
+        System.out.println("Obrigado por usar o ConsoleApp!");
+
+
+
+        entradaUsuario.close();
+
+        System.exit(0);
+
     }
 }

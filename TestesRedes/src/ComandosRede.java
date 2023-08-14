@@ -19,7 +19,7 @@ public class ComandosRede {
                 (process.getInputStream()));
         BufferedReader Error = new BufferedReader(new InputStreamReader
                 (process.getErrorStream()));
-        String s = null;
+        String s;
 
         System.out.println("Standard output: ");
         while((s = input.readLine()) != null)
@@ -34,7 +34,7 @@ public class ComandosRede {
     }
 
     // Driver method
-    public static void main(String args[]) throws Exception
+    public static void main(String[] args) throws Exception
     {
 
         Scanner entradaUsuario = new Scanner(System.in);
